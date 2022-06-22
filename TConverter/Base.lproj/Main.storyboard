@@ -20,30 +20,29 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0°С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-b8-fAT">
-                                <rect key="frame" x="185" y="382" width="59" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0°С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-b8-fAT">
+                                <rect key="frame" x="184.66666666666666" y="382" width="59" height="40"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5p-Uc-Ogi">
-                                <rect key="frame" x="177" y="507" width="75" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5p-Uc-Ogi">
+                                <rect key="frame" x="176.66666666666666" y="507" width="75" height="40"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="El5-Vs-KMZ">
-                                <rect key="frame" x="35" y="448" width="358" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="El5-Vs-KMZ">
+                                <rect key="frame" x="35" y="448" width="358" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="mIX-nV-HfK"/>
+                                </constraints>
                                 <connections>
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wbU-3M-CH8"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-9v-QDw">
-                                <rect key="frame" x="116" y="216" width="197" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-9v-QDw">
+                                <rect key="frame" x="115.66666666666669" y="216" width="197" height="40"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -51,6 +50,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="El5-Vs-KMZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bgu-tH-PZ2"/>
+                            <constraint firstItem="EOM-9v-QDw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="172" id="Bo9-pw-gql"/>
+                            <constraint firstItem="fAc-b8-fAT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LqV-hr-3bk"/>
+                            <constraint firstItem="h5p-Uc-Ogi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="O51-ia-Pot"/>
+                            <constraint firstItem="El5-Vs-KMZ" firstAttribute="top" secondItem="fAc-b8-fAT" secondAttribute="bottom" constant="26" id="ZII-v0-muY"/>
+                            <constraint firstItem="EOM-9v-QDw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e5i-Kz-BoB"/>
+                            <constraint firstItem="h5p-Uc-Ogi" firstAttribute="top" secondItem="El5-Vs-KMZ" secondAttribute="bottom" constant="29" id="fFq-0M-j6T"/>
+                            <constraint firstItem="El5-Vs-KMZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uhg-eR-4r3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="fAc-b8-fAT" id="XKS-Uh-VaS"/>
