@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="123" translatesAutoresizingMaskIntoConstraints="NO" id="nZH-Ec-5Ea">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="-44" width="428" height="1004"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0°С" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAc-b8-fAT">
                                 <rect key="frame" x="184.66666666666666" y="388" width="59" height="40"/>
@@ -41,25 +41,25 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-9v-QDw">
-                                <rect key="frame" x="115.66666666666669" y="216" width="197" height="40"/>
+                                <rect key="frame" x="115.66666666666669" y="172" width="197" height="40"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="PHe-4m-7xO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="El5-Vs-KMZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bgu-tH-PZ2"/>
-                            <constraint firstItem="EOM-9v-QDw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="172" id="Bo9-pw-gql"/>
-                            <constraint firstItem="fAc-b8-fAT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LqV-hr-3bk"/>
-                            <constraint firstItem="h5p-Uc-Ogi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="O51-ia-Pot"/>
-                            <constraint firstItem="nZH-Ec-5Ea" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="YQQ-Ih-6hN"/>
+                            <constraint firstItem="EOM-9v-QDw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="172" id="Bo9-pw-gql"/>
+                            <constraint firstItem="fAc-b8-fAT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LqV-hr-3bk"/>
+                            <constraint firstItem="h5p-Uc-Ogi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O51-ia-Pot"/>
+                            <constraint firstItem="nZH-Ec-5Ea" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="34" id="YQQ-Ih-6hN"/>
                             <constraint firstItem="El5-Vs-KMZ" firstAttribute="top" secondItem="fAc-b8-fAT" secondAttribute="bottom" constant="20" id="ZII-v0-muY"/>
-                            <constraint firstItem="nZH-Ec-5Ea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZZk-Y2-bNU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nZH-Ec-5Ea" secondAttribute="trailing" id="aIV-hg-77X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="nZH-Ec-5Ea" secondAttribute="top" constant="44" id="aQR-Bm-Npl"/>
-                            <constraint firstItem="EOM-9v-QDw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e5i-Kz-BoB"/>
+                            <constraint firstItem="nZH-Ec-5Ea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZZk-Y2-bNU"/>
+                            <constraint firstAttribute="trailing" secondItem="nZH-Ec-5Ea" secondAttribute="trailing" id="aIV-hg-77X"/>
+                            <constraint firstAttribute="top" secondItem="nZH-Ec-5Ea" secondAttribute="top" constant="44" id="aQR-Bm-Npl"/>
+                            <constraint firstItem="EOM-9v-QDw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e5i-Kz-BoB"/>
                             <constraint firstItem="h5p-Uc-Ogi" firstAttribute="top" secondItem="El5-Vs-KMZ" secondAttribute="bottom" constant="20" id="fFq-0M-j6T"/>
                             <constraint firstItem="El5-Vs-KMZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uhg-eR-4r3"/>
                         </constraints>
