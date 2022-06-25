@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider! {
         didSet {
             slider.maximumValue = 100
-            slider.minimumValue = 0
+            slider.minimumValue = -100
             slider.value = 0
         }
     }
